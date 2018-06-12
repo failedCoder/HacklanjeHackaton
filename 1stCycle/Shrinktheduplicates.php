@@ -17,16 +17,10 @@ Output:
 
 $input = '4 4 4 2 8 8 7';
 
-$input = str_split(str_replace(' ', '', $input));
+$array = explode(' ', $input);
 
+$result = array_unique($array);
 
-for ($i=0; $i < count($input); $i++) { 
-	$match=array_keys($input,$input[$i]);
-	for ($j=0; $j < count($match)-1; $j++) { 
-		unset($input[$match[$j]]);
-	}
-}
-echo "<br>";
-foreach ($input as $value) {
-	echo $value.' ';
+foreach ($result as $num) {
+	echo $num.' ';
 }

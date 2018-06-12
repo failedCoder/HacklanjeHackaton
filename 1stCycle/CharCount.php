@@ -37,5 +37,5 @@ $countArray = array_count_values($array);
 ksort($countArray);
 
 foreach ($countArray as $key => $value) {
-	echo $key.':'.$value.'<br>';
+	echo $key.':'.$value."\n";
 }

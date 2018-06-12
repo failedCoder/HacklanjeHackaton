@@ -20,4 +20,5 @@ for ($i=0; $i < 100; $i++) {
 		}
 	}
 }
-print '['.$solution[0].','.$solution[1].','.$solution[2].']';
+sort($solution);
+echo '['.$solution[0].','.$solution[1].','.$solution[2].']';
